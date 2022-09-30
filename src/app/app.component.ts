@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'emailform';
+  email='' as string;
+
+  constructor() {
+  }
+
+  onSubmit() {
+    console.log(this.email)
+  }
 }
